@@ -77,4 +77,9 @@ class VoltageData:
        plt.xlabel('Time [s]')
        plt.ylabel('Voltage [mV]')
        plt.grid(True)
-       return ax # We return the axes, just in case 
+       return ax # We return the axes, just in case
+if __name__ == '__main__':
+    t=[7, 8, 9, 10, 11, 12]
+    v=[1, 2, 3, 4, 5, 6]
+    print(VoltageData.timestamps)
+    print(VoltageData.voltages)
